@@ -63,9 +63,15 @@ public class IWindowManagerImpl implements IWindowManager {
         return mRotation;
     }
 
+
     @Override
     public boolean hasNavigationBar() {
         return mHasNavigationBar;
+    }
+
+    @Override
+    public boolean hasPermanentMenuKey() {
+        return true;
     }
 
     // ---- unused implementation of IWindowManager ----
